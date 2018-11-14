@@ -1,5 +1,7 @@
-print("Hello World")
-stockprice = 10 * 5
-print(stockprice)
-print("I am adding some information to this python script that will make its way to my github account!")
-print("Now, one more time, I am adding information to confirm that the whole online merge things works.")
+from math import *
+
+def commodityprice(price,variance,time,Variable):
+    pricez = price * exp(-.5 * variance * time + sqrt(variance) * sqrt(time) * Variable)
+    return print(pricez)
+
+print(commodityprice(11,.01,1,2))
